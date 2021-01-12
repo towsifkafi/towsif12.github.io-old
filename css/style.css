@@ -10,12 +10,12 @@ body {
   margin: 0;
 }
 
-#notfound {
+#main {
   position: relative;
   height: 100vh;
 }
 
-#notfound .notfound {
+#main .sub-main {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -24,21 +24,21 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.notfound {
+.sub-main {
   max-width: 520px;
   width: 100%;
   line-height: 1.4;
   text-align: center;
 }
 
-.notfound .notfound-404 {
+.sub-main .sub-class {
   position: relative;
   height: 200px;
   margin: 0px auto 20px;
   z-index: -1;
 }
 
-.notfound .notfound-404 h1 {
+.sub-main .sub-class h1 {
   font-family: 'Yusei Magic', sans-serif;
   font-size: 70px;
   font-weight: 200;
@@ -55,12 +55,12 @@ body {
   transition: 0.2s all;
 }
 
-.notfound .notfound-404 h1:hover {
+.sub-main .sub-class h1:hover {
   color: #4baffc;
   font-size: 82px;
 }
 
-.notfound .notfound-404 h2 {
+.sub-main .sub-class h2 {
   font-family: 'Hachi Maru Pop', sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -79,12 +79,12 @@ body {
   transition: 0.2s all;
 }
 
-.notfound .notfound-404 h2:hover {
+.sub-main .sub-class h2:hover {
   color: #3efd34;
   font-size: 25px;
 }
 
-.notfound .notfound-404 .social-media h3 {
+.sub-main .sub-class .social-media h3 {
   font-family: 'Hachi Maru Pop', sans-serif;
   font-size: 15px;
   font-weight: 450;
@@ -98,12 +98,12 @@ body {
   transition: 0.2s all;
 }
 
-.notfound .notfound-404 .social-media h3:hover {
+.sub-main .sub-class .social-media h3:hover {
   color: #09faf6;
   font-size: 15.5px;
 }
 
-.notfound .notfound-404 .social-media h4 {
+.sub-main .sub-class .social-media h4 {
   font-family: 'Hachi Maru Pop', sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -118,11 +118,11 @@ body {
   transition: 0.2s all;
 }
 
-.notfound .notfound-404 .social-media h4:hover {
+.sub-main .sub-class .social-media h4:hover {
   color: #4834fd;
 }
 
-.notfound a {
+.sub-main a {
   font-family: 'Balsamiq Sans', sans-serif;
   display: inline-block;
   font-weight: 400;
@@ -136,7 +136,7 @@ body {
   transition: 0.2s all;
 }
 
-.notfound a:hover {
+.sub-main a:hover {
   color: #211b19;
   background: rgb(232, 231, 231);
 }
@@ -145,23 +145,23 @@ body {
 
 
 @media only screen and (max-width: 767px) {
-  .notfound .notfound-404 h1 {
+  .sub-main .sub-class h1 {
     font-size: 148px;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .notfound .notfound-404 {
+  .sub-main .sub-class {
     height: 148px;
     margin: 0px auto 10px;
   }
-  .notfound .notfound-404 h1 {
+  .sub-main .sub-class h1 {
     font-size: 86px;
   }
-  .notfound .notfound-404 h2 {
+  .sub-main .sub-class h2 {
     font-size: 16px;
   }
-  .notfound a {
+  .sub-main a {
     padding: 7px 15px;
     font-size: 14px;
   }
