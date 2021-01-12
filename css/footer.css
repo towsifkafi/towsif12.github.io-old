@@ -3,10 +3,13 @@
     left: 0;
     bottom: 0;
     width: 100%;
-  
+    outline-style: solid;
+    outline-color: #211b19;
+    outline-width: 1px;
     color: white;
     text-align: center;
   }
+
   
   .footer a {
     font-family: 'Balsamiq Sans', sans-serif;
@@ -22,8 +25,11 @@
   }
   
   .footer a:hover {
-    font-size: 18px;
-    padding: 13px 30px;
+    color:grey;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 1px;
+    padding: 13px 40px;
   }
 
   #DONT:hover {

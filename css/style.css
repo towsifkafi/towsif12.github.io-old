@@ -87,6 +87,7 @@ body {
 .notfound .notfound-404 .social-media h3 {
   font-family: 'Hachi Maru Pop', sans-serif;
   font-size: 15px;
+  user-select: none;
   font-weight: 450;
   display: inline-block;
   position: absolute;
