@@ -1,0 +1,27 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  
+    color: white;
+    text-align: center;
+  }
+  
+  .footer a {
+    font-family: 'Balsamiq Sans', sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+    color: #211b19;
+    text-transform: uppercase;
+    padding: 13px 10px;
+    font-size: 15px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .footer a:hover {
+    font-size: 18px;
+    padding: 13px 30px;
+  }
