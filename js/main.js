@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    console.log("%cOwO", "font: 50px sans-serif; font-weight:bold; color:grey;");
+    console.log("%cWaccha duin here?", "font: 15px sans-serif; font-weight:bold; color:grey;");
     number = 1
     $("#name").click(function() {
         var color = [ "#f55142", "#f58a42", "#f5d442", "#a1f542", "#42f55a", "#42f5bf", "#42a7f5", "#685dfc", "#ca5dfc", "#fc5ddc", "#fc5d92" ]

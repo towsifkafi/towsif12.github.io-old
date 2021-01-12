@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    console.log("%cOwO", "font: 50px sans-serif; font-weight:bold; color:grey;");
+    console.log("%cWaccha duin here?", "font: 15px sans-serif; font-weight:bold; color:grey;");
     setInterval(function() {
         $.ajax({
             url: "https://api.mcsrvstat.us/2/play.pixeledgebd.com"
