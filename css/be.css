@@ -38,131 +38,123 @@ body {
   z-index: -1;
 }
 
-.notfound .notfound-404 h1 {
+
+.notfound .notfound-404 #pixeledge h2 {
   font-family: 'Yusei Magic', sans-serif;
-  font-size: 70px;
-  font-weight: 200;
-  margin: 0px;
-  color: #211b19;
-  text-transform: uppercase;
-  position: absolute;
-  left: 50%;
-  user-select: none;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.notfound .notfound-404 h1:hover {
-  color: #4baffc;
-  font-size: 82px;
-}
-
-.notfound .notfound-404 h2 {
-  font-family: 'Hachi Maru Pop', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   user-select: none;
   color: #211b19;
-  padding: 10px 5px;
   margin: auto;
   display: inline-block;
   position: absolute;
   bottom: 42px;
-  top: 25%;
+  top: 1%;
   left: 0;
   right: 0;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
-.notfound .notfound-404 h2:hover {
-  color: #3efd34;
-  font-size: 25px;
-}
-
-.notfound .notfound-404 .social-media h3 {
-  font-family: 'Hachi Maru Pop', sans-serif;
-  font-size: 15px;
-  font-weight: 450;
-  display: inline-block;
-  position: absolute;
-  bottom: 42px;
-  top: 77%;
-  left: 16%;
-  right: 0;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.notfound .notfound-404 .social-media h3:hover {
-  color: #09faf6;
-  font-size: 15.5px;
-}
-
-.notfound .notfound-404 .social-media h4 {
-  font-family: 'Hachi Maru Pop', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  display: inline-block;
-  position: absolute;
-  user-select: none;
-  bottom: 42px;
-  top: 75%;
-  left: 0;
-  right: 30%;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.notfound .notfound-404 .social-media h4:hover {
-  color: #4834fd;
-}
-
-.notfound a {
-  font-family: 'Balsamiq Sans', sans-serif;
-  display: inline-block;
+.notfound .notfound-404 #pixeledge h3 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
   font-weight: 400;
-  text-decoration: none;
-  color: #fff;
   text-transform: uppercase;
-  padding: 13px 23px;
-  background: #211b19;
-  font-size: 15px;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 1%;
+  left: 35%;
+  right: 0;
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
 
-.notfound a:hover {
+.notfound .notfound-404 #banglacraft h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
   color: #211b19;
-  background: rgb(232, 231, 231);
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 20%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .notfound-404 #banglacraft h3 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 20%;
+  left: 40%;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .notfound-404 #ultracraft h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 40%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound .notfound-404 #ultracraft h3 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 40%;
+  left: 38%;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 
 
-
-
-@media only screen and (max-width: 767px) {
-  .notfound .notfound-404 h1 {
-    font-size: 148px;
-  }
-}
 
 @media only screen and (max-width: 480px) {
   .notfound .notfound-404 {
     height: 148px;
     margin: 0px auto 10px;
   }
-  .notfound .notfound-404 h1 {
-    font-size: 86px;
-  }
   .notfound .notfound-404 h2 {
     font-size: 16px;
-  }
-  .notfound a {
-    padding: 7px 15px;
-    font-size: 14px;
   }
 }
