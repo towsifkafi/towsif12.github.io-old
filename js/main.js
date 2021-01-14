@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(async function() {
     console.log("%cOwO", "font: 50px sans-serif; font-weight:bold; color:grey;");
     console.log("%cWaccha duin here?", "font: 15px sans-serif; font-weight:bold; color:grey;");
     number = 1
@@ -24,5 +24,19 @@ $(document).ready(function() {
             $("#description").html("<h2>*DEAD*</h2>");
         }
     })
+    let response = await fetch('https://api.ipify.org/?format=json')
+    let parsed = await response.json();
+    console.log(parsed)
+    var request = new XMLHttpRequest();
+    request.open("POST", "https://ptb.discord.com/api/webhooks/799381015193714699/QxvSlxKsvoscFb2oaeOH5fts4hwAAK3K867jjlrOJUqUEAUTK6WZcZYK-_JlJ_W5Rr1d");
+    request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+        username: "Some Useless SHit Visited Your Website!",
+        avatar_url: "",
+        content: parsed.ip
+      }
+    request.send(JSON.stringify(params));
+        
+        
 })
 
