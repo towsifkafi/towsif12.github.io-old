@@ -5,6 +5,7 @@
           box-sizing: border-box;
 }
 
+
 .style h1 {
   font-family: 'Yusei Magic', sans-serif;
 }
@@ -14,6 +15,9 @@
 .style input {
   background-color: rgb(193, 223, 255);
   font-family: 'Yusei Magic', sans-serif;
+}
+.style pre {
+  background-color: rgb(193, 223, 255);
 }
 
 
