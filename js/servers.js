@@ -29,5 +29,23 @@ $(document).ready(function() {
                     $("#ultracraft").html(`<h2>UltraCraft: </h2><h3>Offline</h3>`);
                 }
         });
+        $.ajax({
+            url: "https://api.mcsrvstat.us/2/zombiecraft.mcpro.io"
+        }).then(function(data) {
+            if (data.online == true) {
+                $("#zombikeraft").html(`<h2>ZombieCraft: </h2><h3>${data.players.online}</h3>`);
+                } else {
+                    $("#zombikeraft").html(`<h2>ZombieCraft: </h2><h3>Offline</h3>`);
+                }
+        });
+        $.ajax({
+            url: "https://api.mcsrvstat.us/2/zombiecraft.mcpro.io"
+        }).then(function(data) {
+            if (data.online == true) {
+                $("#gerekeraft").html(`<h2>GrayCraft: </h2><h3>${data.players.online}</h3>`);
+                } else {
+                    $("#gerekeraft").html(`<h2>GrayCraft: </h2><h3>Offline</h3>`);
+                }
+        });
     }, 5000)
 })
