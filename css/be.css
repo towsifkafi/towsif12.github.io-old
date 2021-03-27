@@ -128,25 +128,6 @@ body {
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 }
-
-.notfound .notfound-404 #zombikeraft h2 {
-  font-family: 'Yusei Magic', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  user-select: none;
-  color: #211b19;
-  margin: auto;
-  display: inline-block;
-  position: absolute;
-  bottom: 42px;
-  top: 0%;
-  left: 0;
-  right: 0;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
 .notfound .notfound-404 #ultracraft h3 {
   font-family: 'Yusei Magic', sans-serif;
   font-size: 20px;
@@ -165,7 +146,74 @@ body {
   transition: 0.2s all;
 }
 
-
+.notfound .notfound-404 #zombikeraft h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 60%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound .notfound-404 #zombikeraft h3 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 60%;
+  left: 38%;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound .notfound-404 #gerekeraft h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 80%;
+  left: 0;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound .notfound-404 #gerekeraft h3 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  user-select: none;
+  color: #211b19;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 42px;
+  top: 80%;
+  left: 38%;
+  right: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
 
 @media only screen and (max-width: 480px) {
   .notfound .notfound-404 {

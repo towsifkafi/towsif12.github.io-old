@@ -39,7 +39,7 @@ $(document).ready(function() {
                 }
         });
         $.ajax({
-            url: "https://api.mcsrvstat.us/2/zombiecraft.mcpro.io"
+            url: "https://api.mcsrvstat.us/2/play.graycraftbd.tk"
         }).then(function(data) {
             if (data.online == true) {
                 $("#gerekeraft").html(`<h2>GrayCraft: </h2><h3>${data.players.online}</h3>`);
