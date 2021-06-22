@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Sofia|Trirong|Yusei+Magic|Hachi+Maru+Pop|Balsamiq+Sans');
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.style h1 {
+  font-family: 'Yusei Magic', sans-serif;
+}
+.style h3 {
+  font-family: 'Yusei Magic', sans-serif;
+}
+.style h5 {
+  font-family: 'Yusei Magic', sans-serif;
+  color:lightgreen;
+}
+.style input {
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+

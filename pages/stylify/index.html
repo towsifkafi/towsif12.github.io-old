@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="/src/css/stylify.css" />
+    <link type="text/css" rel="stylesheet" href="/src/css/footer.css" />
+    <style>
+        * { text-align: center }
+        .footer {
+            background-color: white;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/figlet@1.5.0/lib/figlet.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class='style'>
+        <h1>🪄 Text Styler</h1>
+        <input type="text" id="myText" onchange="t()">
+        <input type="button" value="🃏 Stylify mah text">
+        <h5>Loaded 288 Fonts</h5>
+        <div class='limit'>
+            <h3>Standard</h3>
+            <DIV id='Standard'>
+                <p>No Text</p>
+            </DIV>
+            <h3>3-D</h3>
+            <DIV id='3-D'>
+                <p>No Text</p>
+            </DIV>
+            <h3>1Row</h3>
+            <DIV id='1Row'>
+                <p>No Text</p>
+            </DIV>
+            <h3>3D Diagonal</h3>
+            <DIV id='3D-Diagonal'>
+                <p>No Text</p>
+            </DIV>
+            <h3>3D-ASCII</h3>
+            <DIV id='3D-ASCII'>
+                <p>No Text</p>
+            </DIV>
+            <h3>ANSI Shadow</h3>
+            <DIV id='ANSI'>
+                <p>No Text</p>
+            </DIV>
+            <h3>3x5</h3>
+            <DIV id='3x5'>
+                <p>No Text</p>
+            </DIV>
+            <h3>4Max</h3>
+            <DIV id='4Max'>
+                <p>No Text</p>
+            </DIV>
+            <h3>5 Line Oblique</h3>
+            <DIV id='5Line'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Acrobatic</h3>
+            <DIV id='Acrobatic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Acrobatic</h3>
+            <DIV id='Alligator'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Acrobatic2</h3>
+            <DIV id='Alligator2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Alpha</h3>
+            <DIV id='Alpha'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Alphabet</h3>
+            <DIV id='Alphabet'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC 3 Line</h3>
+            <DIV id='AMCLine'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC 3 Liv1</h3>
+            <DIV id='AMCLiv1'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC AAA01</h3>
+            <DIV id='AMCLAAA01'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Neko</h3>
+            <DIV id='AMCNeko'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Razor</h3>
+            <DIV id='AMCRazor'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Razor2</h3>
+            <DIV id='AMCRazor2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Slash</h3>
+            <DIV id='AMCSlash'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Slider</h3>
+            <DIV id='AMCSlider'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Thin</h3>
+            <DIV id='AMCThin'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Tubes</h3>
+            <DIV id='AMCTubes'>
+                <p>No Text</p>
+            </DIV>
+            <h3>AMC Untitled</h3>
+            <DIV id='AMCUntitled'>
+                <p>No Text</p>
+            </DIV>
+            <h3>ANSI Regular</h3>
+            <DIV id='ANSIRegular'>
+                <p>No Text</p>
+            </DIV>
+            <h3>ANSI Shadow</h3>
+            <DIV id='ANSIShadow'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Arrows</h3>
+            <DIV id='Arrows'>
+                <p>No Text</p>
+            </DIV>
+            <h3>ASCII New Roman</h3>
+            <DIV id='ASCIINewRoman'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Avatar</h3>
+            <DIV id='Avatar'>
+                <p>No Text</p>
+            </DIV>
+            <h3>B1FF</h3>
+            <DIV id='B1FF'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Banner</h3>
+            <DIV id='Banner'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Banner3-D</h3>
+            <DIV id='Banner3-D'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Banner3</h3>
+            <DIV id='Banner3'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Banner4</h3>
+            <DIV id='Banner4'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Barbwire</h3>
+            <DIV id='Barbwire'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Basic</h3>
+            <DIV id='Basic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bear</h3>
+            <DIV id='Bear'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bell</h3>
+            <DIV id='Bell'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Benjamin</h3>
+            <DIV id='Benjamin'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Big Chief</h3>
+            <DIV id='BigChief'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Big Money-ne</h3>
+            <DIV id='BigMoney-ne'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Big Money-nw</h3>
+            <DIV id='BigMoney-nw'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Big Money-se</h3>
+            <DIV id='BigMoney-se'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Big Money-sw</h3>
+            <DIV id='BigMoney-sw'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Big</h3>
+            <DIV id='Big'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bigfig</h3>
+            <DIV id='Bigfig'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Binary</h3>
+            <DIV id='Binary'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Block</h3>
+            <DIV id='Block'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Blocks</h3>
+            <DIV id='Blocks'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bloody</h3>
+            <DIV id='Bloody'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bolger</h3>
+            <DIV id='Bolger'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Braced</h3>
+            <DIV id='Braced'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bright</h3>
+            <DIV id='Bright'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Broadway KB</h3>
+            <DIV id='BroadwayKB'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Broadway</h3>
+            <DIV id='Broadway'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bubble</h3>
+            <DIV id='Bubble'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Bulbhead</h3>
+            <DIV id='Bulbhead'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Caligraphy</h3>
+            <DIV id='Caligraphy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Caligraphy2</h3>
+            <DIV id='Caligraphy2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Calvin S</h3>
+            <DIV id='CalvinS'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cards</h3>
+            <DIV id='Cards'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Catwalk</h3>
+            <DIV id='Catwalk'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Chiseled</h3>
+            <DIV id='Chiseled'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Chunky</h3>
+            <DIV id='Chunky'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Coinstak</h3>
+            <DIV id='Coinstak'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cola</h3>
+            <DIV id='Cola'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Colossal</h3>
+            <DIV id='Colossal'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Computer</h3>
+            <DIV id='Computer'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Contessa</h3>
+            <DIV id='Contessa'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Contrast</h3>
+            <DIV id='Contrast'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cosmike</h3>
+            <DIV id='Cosmike'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Crawford</h3>
+            <DIV id='Crawford'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Crawford2</h3>
+            <DIV id='Crawford2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Crazy</h3>
+            <DIV id='Crazy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cricket</h3>
+            <DIV id='Cricket'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cursive</h3>
+            <DIV id='Cursive'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cyberlarge</h3>
+            <DIV id='Cyberlarge'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cybermedium</h3>
+            <DIV id='Cybermedium'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cybersmall</h3>
+            <DIV id='Cybersmall'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Cygnet</h3>
+            <DIV id='Cygnet'>
+                <p>No Text</p>
+            </DIV>
+            <h3>DANC4</h3>
+            <DIV id='DANC4'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Dancing Font</h3>
+            <DIV id='DancingFont'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Decimal</h3>
+            <DIV id='Decimal'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Def Leppard</h3>
+            <DIV id='DefLeppard'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Delta Corps Priest 1</h3>
+            <DIV id='DeltaCorpsPriest1'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Diamond</h3>
+            <DIV id='Diamond'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Diet Cola</h3>
+            <DIV id='DietCola'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Digital</h3>
+            <DIV id='Digital'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Doh</h3>
+            <DIV id='Doh'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Doom</h3>
+            <DIV id='Doom'>
+                <p>No Text</p>
+            </DIV>
+            <h3>DOS Rebel</h3>
+            <DIV id='DOSRebel'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Dot Matrix</h3>
+            <DIV id='DotMatrix'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Double Shorts</h3>
+            <DIV id='DoubleShorts'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Double</h3>
+            <DIV id='Double'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Dr Pepper</h3>
+            <DIV id='DrPepper'>
+                <p>No Text</p>
+            </DIV>
+            <h3>DWhistled</h3>
+            <DIV id='DWhistled'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Efti Chess</h3>
+            <DIV id='EftiChess'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Efti Font</h3>
+            <DIV id='EftiFont'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Efti Italic</h3>
+            <DIV id='EftiItalic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Efti Piti</h3>
+            <DIV id='EftiPiti'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Efti Robot</h3>
+            <DIV id='EftiRobot'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Efti Wall</h3>
+            <DIV id='EftiWall'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Efti Water</h3>
+            <DIV id='EftiWater'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Electronic</h3>
+            <DIV id='Electronic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Elite</h3>
+            <DIV id='Elite'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Epic</h3>
+            <DIV id='Epic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Fender</h3>
+            <DIV id='Fender'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Filter</h3>
+            <DIV id='Filter'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Fire Font-k</h3>
+            <DIV id='FireFont-k'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Fire Font-s</h3>
+            <DIV id='FireFont-s'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Flipped</h3>
+            <DIV id='Flipped'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Flower Power</h3>
+            <DIV id='FlowerPower'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Four Tops</h3>
+            <DIV id='FourTops'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Fraktur</h3>
+            <DIV id='Fraktur'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Fun Face</h3>
+            <DIV id='FunFace'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Fun Faces</h3>
+            <DIV id='FunFaces'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Fuzzy</h3>
+            <DIV id='Fuzzy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Georgi16</h3>
+            <DIV id='Georgi16'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Georgia11</h3>
+            <DIV id='Georgia11'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Ghost</h3>
+            <DIV id='Ghost'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Ghoulish</h3>
+            <DIV id='Ghoulish'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Glenyn</h3>
+            <DIV id='Glenyn'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Goofy</h3>
+            <DIV id='Goofy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Gothic</h3>
+            <DIV id='Gothic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Graceful</h3>
+            <DIV id='Graceful'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Gradient</h3>
+            <DIV id='Gradient'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Graffiti</h3>
+            <DIV id='Graffiti'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Greek</h3>
+            <DIV id='Greek'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Heart Left</h3>
+            <DIV id='HeartLeft'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Heart Right</h3>
+            <DIV id='HeartRight'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Henry 3D</h3>
+            <DIV id='Henry3D'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Hex</h3>
+            <DIV id='Hex'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Hieroglyphs</h3>
+            <DIV id='Hieroglyphs'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Hollywood</h3>
+            <DIV id='Hollywood'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Horizontal Left</h3>
+            <DIV id='HorizontalLeft'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Horizontal Right</h3>
+            <DIV id='HorizontalRight'>
+                <p>No Text</p>
+            </DIV>
+            <h3>ICL-1900</h3>
+            <DIV id='ICL-1900'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Impossible</h3>
+            <DIV id='Impossible'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Invita</h3>
+            <DIV id='Invita'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Isometric1</h3>
+            <DIV id='Isometric1'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Isometric2</h3>
+            <DIV id='Isometric2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Isometric3</h3>
+            <DIV id='Isometric3'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Isometric4</h3>
+            <DIV id='Isometric4'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Italic</h3>
+            <DIV id='Italic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Ivrit</h3>
+            <DIV id='Ivrit'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Jacky</h3>
+            <DIV id='Jacky'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Jazmine</h3>
+            <DIV id='Jazmine'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Jerusalem</h3>
+            <DIV id='Jerusalem'>
+                <p>No Text</p>
+            </DIV>
+            <h3>JS Block Letters</h3>
+            <DIV id='JSBlockLetters'>
+                <p>No Text</p>
+            </DIV>
+            <h3>JS Bracket Letters</h3>
+            <DIV id='JSBracketLetters'>
+                <p>No Text</p>
+            </DIV>
+            <h3>JS Capital Curves</h3>
+            <DIV id='JSCapitalCurves'>
+                <p>No Text</p>
+            </DIV>
+            <h3>JS Cursive</h3>
+            <DIV id='JSCursive'>
+                <p>No Text</p>
+            </DIV>
+            <h3>JS Stick Letters</h3>
+            <DIV id='JSStickLetters'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Katakana</h3>
+            <DIV id='Katakana'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Kban</h3>
+            <DIV id='Kban'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Keyboard</h3>
+            <DIV id='Keyboard'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Knob</h3>
+            <DIV id='Knob'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Konto Slant</h3>
+            <DIV id='KontoSlant'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Konto</h3>
+            <DIV id='Konto'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Larry 3D 2</h3>
+            <DIV id='Larry3D2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Larry 3D</h3>
+            <DIV id='Larry3D'>
+                <p>No Text</p>
+            </DIV>
+            <h3>LCD</h3>
+            <DIV id='LCD'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Lean</h3>
+            <DIV id='Lean'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Letters</h3>
+            <DIV id='Letters'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Lil Devil</h3>
+            <DIV id='LilDevil'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Line Blocks</h3>
+            <DIV id='LineBlocks'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Linux</h3>
+            <DIV id='Linux'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Lockergnome</h3>
+            <DIV id='Lockergnome'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Madrid</h3>
+            <DIV id='Madrid'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Marquee</h3>
+            <DIV id='Marquee'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Maxfour</h3>
+            <DIV id='Maxfour'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Merlin1</h3>
+            <DIV id='Merlin1'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Merlin2</h3>
+            <DIV id='Merlin2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Mike</h3>
+            <DIV id='Mike'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Mini</h3>
+            <DIV id='Mini'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Mirror</h3>
+            <DIV id='Mirror'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Mnemonic</h3>
+            <DIV id='Mnemonic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Modular</h3>
+            <DIV id='Modular'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Morse</h3>
+            <DIV id='Morse'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Morse2</h3>
+            <DIV id='Morse2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Moscow</h3>
+            <DIV id='Moscow'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Mshebrew210</h3>
+            <DIV id='Mshebrew210'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Muzzle</h3>
+            <DIV id='Muzzle'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Nancyj-Fancy</h3>
+            <DIV id='Nancyj-Fancy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Nancyj-Improved</h3>
+            <DIV id='Nancyj-Improved'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Nancyj-Underlined</h3>
+            <DIV id='Nancyj-Underlined'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Nancyj</h3>
+            <DIV id='Nancyj'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Nipples</h3>
+            <DIV id='Nipples'>
+                <p>No Text</p>
+            </DIV>
+            <h3>NScript</h3>
+            <DIV id='NScript'>
+                <p>No Text</p>
+            </DIV>
+            <h3>NT Greek</h3>
+            <DIV id='NTGreek'>
+                <p>No Text</p>
+            </DIV>
+            <h3>NV Script</h3>
+            <DIV id='NVScript'>
+                <p>No Text</p>
+            </DIV>
+            <h3>O8</h3>
+            <DIV id='O8'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Octal</h3>
+            <DIV id='Octal'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Ogre</h3>
+            <DIV id='Ogre'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Old Banner</h3>
+            <DIV id='OldBanner'>
+                <p>No Text</p>
+            </DIV>
+            <h3>OS2</h3>
+            <DIV id='OS2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Pagga</h3>
+            <DIV id='Pagga'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Patorjk's Cheese</h3>
+            <DIV id='PatorjksCheese'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Patorjk-HeX</h3>
+            <DIV id='Patorjk-HeX'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Pawp</h3>
+            <DIV id='Pawp'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Peaks Slant</h3>
+            <DIV id='PeaksSlant'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Peaks</h3>
+            <DIV id='Peaks'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Pebbles</h3>
+            <DIV id='Pebbles'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Pepper</h3>
+            <DIV id='Pepper'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Poison</h3>
+            <DIV id='Poison'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Puffy</h3>
+            <DIV id='Puffy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Puzzle</h3>
+            <DIV id='Puzzle'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Pyramid</h3>
+            <DIV id='Pyramid'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Rammstein</h3>
+            <DIV id='Rammstein'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Rectangles</h3>
+            <DIV id='Rectangles'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Red Phoenix</h3>
+            <DIV id='RedPhoenix'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Relief</h3>
+            <DIV id='Relief'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Relief2</h3>
+            <DIV id='Relief2'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Reverse</h3>
+            <DIV id='Reverse'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Roman</h3>
+            <DIV id='Roman'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Rot13</h3>
+            <DIV id='Rot13'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Rotated</h3>
+            <DIV id='Rotated'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Rounded</h3>
+            <DIV id='Rounded'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Rowan Cap</h3>
+            <DIV id='RowanCap'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Rozzo</h3>
+            <DIV id='Rozzo'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Runic</h3>
+            <DIV id='Runic'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Runyc</h3>
+            <DIV id='Runyc'>
+                <p>No Text</p>
+            </DIV>
+            <h3>S Blood</h3>
+            <DIV id='SBlood'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Santa Clara</h3>
+            <DIV id='SantaClara'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Script</h3>
+            <DIV id='Script'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Serifcap</h3>
+            <DIV id='Serifcap'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Shadow</h3>
+            <DIV id='Shadow'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Shimrod</h3>
+            <DIV id='Shimrod'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Short</h3>
+            <DIV id='Short'>
+                <p>No Text</p>
+            </DIV>
+            <h3>SL Script</h3>
+            <DIV id='SLScript'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Slant Relief</h3>
+            <DIV id='SlantRelief'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Slant</h3>
+            <DIV id='Slant'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Slide</h3>
+            <DIV id='Slide'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Caps</h3>
+            <DIV id='SmallCaps'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Isometric1</h3>
+            <DIV id='SmallIsometric1'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Keyboard</h3>
+            <DIV id='SmallKeyboard'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Poison</h3>
+            <DIV id='SmallPoison'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Script</h3>
+            <DIV id='SmallScript'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Shadow</h3>
+            <DIV id='SmallShadow'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Slant</h3>
+            <DIV id='SmallSlant'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small Tengwar</h3>
+            <DIV id='SmallTengwar'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Small</h3>
+            <DIV id='Small'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Soft</h3>
+            <DIV id='Soft'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Speed</h3>
+            <DIV id='Speed'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Spliff</h3>
+            <DIV id='Spliff'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stacey</h3>
+            <DIV id='Stacey'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stampate</h3>
+            <DIV id='Stampate'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stampatello</h3>
+            <DIV id='Stampatello'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Standard</h3>
+            <DIV id='Standard'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Star Strips</h3>
+            <DIV id='StarStrips'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Star Wars</h3>
+            <DIV id='StarWars'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stellar</h3>
+            <DIV id='Stellar'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stforek</h3>
+            <DIV id='Stforek'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stick Letters</h3>
+            <DIV id='StickLetters'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stop</h3>
+            <DIV id='Stop'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Straight</h3>
+            <DIV id='Straight'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Stronger Than All</h3>
+            <DIV id='StrongerThanAll'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Sub-Zero</h3>
+            <DIV id='Sub-Zero'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Swamp Land</h3>
+            <DIV id='SwampLand'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Swan</h3>
+            <DIV id='Swan'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Sweet</h3>
+            <DIV id='Sweet'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Tanja</h3>
+            <DIV id='Tanja'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Tengwar</h3>
+            <DIV id='Tengwar'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Term</h3>
+            <DIV id='Term'>
+                <p>No Text</p>
+            </DIV>
+            <h3>The Edge</h3>
+            <DIV id='TheEdge'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Thick</h3>
+            <DIV id='Thick'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Thin</h3>
+            <DIV id='Thin'>
+                <p>No Text</p>
+            </DIV>
+            <h3>THIS</h3>
+            <DIV id='THIS'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Thorned</h3>
+            <DIV id='Thorned'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Three Point</h3>
+            <DIV id='ThreePoint'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Ticks Slant</h3>
+            <DIV id='TicksSlant'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Ticks</h3>
+            <DIV id='Ticks'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Tiles</h3>
+            <DIV id='Tiles'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Tinker-Toy</h3>
+            <DIV id='Tinker-Toy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Tombstone</h3>
+            <DIV id='Tombstone'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Train</h3>
+            <DIV id='Train'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Trek</h3>
+            <DIV id='Trek'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Tsalagi</h3>
+            <DIV id='Tsalagi'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Tubular</h3>
+            <DIV id='Tubular'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Twisted</h3>
+            <DIV id='Twisted'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Two Point</h3>
+            <DIV id='TwoPoint'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Univers</h3>
+            <DIV id='Univers'>
+                <p>No Text</p>
+            </DIV>
+            <h3>USA Flag</h3>
+            <DIV id='USAFlag'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Varsity</h3>
+            <DIV id='Varsity'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Wavy</h3>
+            <DIV id='Wavy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Weird</h3>
+            <DIV id='Weird'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Wet Letter</h3>
+            <DIV id='WetLetter'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Whimsy</h3>
+            <DIV id='Whimsy'>
+                <p>No Text</p>
+            </DIV>
+            <h3>Wow</h3>
+            <DIV id='Wow'>
+                <p>No Text</p>
+            </DIV>
+
+
+            <DIV id='FAKE'>
+                <h2>More Coming Soon OwO</h2>
+            </DIV>
+        </div>
+        <div class="footer">
+            <a href="/">Back</a>
+        </div>
+    </div>
+    <script src="/src/js/stylify.js"></script>
+</body>
+</html>

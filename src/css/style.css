@@ -159,8 +159,19 @@ body {
   background: rgb(232, 231, 231);
 }
 
+/* MyANimeList Button */
 
+.notfound #mal:hover {
+  color: #211b19;
+  background: #7dafe4;
+}
 
+/* Github Button */
+
+.notfound #github:hover {
+  color: #31302f;
+  background: #aeb1b5;
+}
 
 @media only screen and (max-width: 767px) {
   .notfound .notfound-404 h1 {
@@ -199,7 +210,7 @@ body {
 }
 
 /* Modal Content */
-.modal-content {
+.project-content {
   border-radius: 5px;
   background-color: #fefefe;
   margin: auto;
@@ -211,9 +222,9 @@ body {
   text-align: center;
 }
 
-.modal-content h2 {
+.project-content h2 {
   font-family: 'Yusei Magic', sans-serif;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
@@ -225,7 +236,140 @@ body {
   transition: 0.2s all;
 }
 
-.modal-content a {
+.project-content .project-container {
+  font-family: 'Yusei Magic', sans-serif;
+  border-radius: 15px;
+}
+
+
+
+/* CraftingTable */
+
+#ctable {
+  font-family: 'Balsamiq Sans', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #211b19;
+  font-size: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+#ctable:hover {
+  color: #211b19;
+  background: #91f284;
+}
+
+/* Fork Bot */
+
+#forkbot {
+  font-family: 'Balsamiq Sans', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #211b19;
+  font-size: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+#forkbot:hover {
+  color: #211b19;
+  background: #76bff0;
+}
+
+/* API */
+
+#API {
+  font-family: 'Balsamiq Sans', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: #211b19;
+  font-size: 15px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+#API:hover {
+  color: #211b19;
+  background: #fa8383;
+}
+
+#forkbot:hover+.project-container {
+  opacity: 100;
+}
+#API:hover+.project-container {
+  opacity: 100;
+}
+
+#ctable:hover+.project-container {
+  opacity: 100;
+}
+
+/*            CraftingTable Details              */
+
+#ctabletext {
+  animation: fade 0.2s ease-in-out alternate;
+  border-radius: 5px;
+  height: 10px;
+  text-align: center;
+  background-color: #c3f7bc;
+  padding-bottom: 10%;
+}
+#ctabletext p{
+  padding-top: 40px;
+  text-align: center;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 20px;
+}
+
+
+
+/*            ForkBot Details              */
+
+#forkbottext {
+  animation: fade 0.2s ease-in-out alternate;
+  border-radius: 5px;
+  height: 10px;
+  text-align: center;
+  background-color: #c0def2;
+  padding-bottom: 10%;
+}
+#forkbottext p{
+  padding-top: 40px;
+  text-align: center;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 20px;
+}
+
+
+/*            API Details              */
+
+#apitext {
+  animation: fade 0.2s ease-in-out alternate;
+  border-radius: 5px;
+  height: 10px;
+  text-align: center;
+  background-color: #faafaf;
+  padding-bottom: 10%;
+}
+#apitext p{
+  padding-top: 40px;
+  text-align: center;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 20px;
+}
+
+
+.project-content a {
   font-family: 'Balsamiq Sans', sans-serif;
   display: inline-block;
   font-weight: 400;
@@ -239,10 +383,12 @@ body {
   transition: 0.2s all;
 }
 
-.modal-content a:hover {
+
+.project-content a:hover {
   color: #211b19;
   background: rgb(232, 231, 231);
 }
+
 
 /* The Close Button */
 .close {
@@ -269,4 +415,11 @@ body {
   from {top: -300px; opacity: 1}
   to {top: 0; opacity: 0}
 }
-
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
