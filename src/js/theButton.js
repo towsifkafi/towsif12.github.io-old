@@ -1,5 +1,7 @@
 const button = document.getElementById("runaway-btn");
 const emoji = ['😀','😁','😂','🤣','😃','😄','😅','😆','😉','😊','😋','😎','😍','😘','🥰','😗','😙','🥲','😚','🤯','🙂','🤗','🤩','🤔','🤨','😐','😑','😶','🙄','😏','😣','😥','😮','🤐','😯','😪','😫','🥱','😴','😌','😛','😜','😝','🤤','😒','😓','😔']
+score = 1
+// 😳
 
 const animateMove = (element, prop, pixels) =>
   anime({
@@ -15,7 +17,16 @@ const animateMove = (element, prop, pixels) =>
 
     animateMove(this, "left", left).play();
     animateMove(this, "top", top).play();
-    $('#runaway-btn').html(emoji[Math.floor(Math.random()*emoji.length)])
+    //$('#runaway-btn').html(emoji[Math.floor(Math.random()*emoji.length)])
+
+    $('#runaway-btn').hover(function(){
+      $('#score').html(score)
+      score += 1
+      $('#runaway-btn').html('😳')
+    },function(){
+      $('#runaway-btn').html('🤣')
+    })
+
   });
 });
 
